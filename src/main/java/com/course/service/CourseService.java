@@ -1,6 +1,8 @@
 package com.course.service;
 
+import com.course.dto.CourseIncomeDTO;
 import com.course.dto.CourseStudentCountDTO;
+import com.course.mapper.CourseIncomeMapper;
 import com.course.mapper.CourseStudentCountMapper;
 import com.course.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,5 +39,9 @@ public class CourseService {
         }
 
         return result;
+    }
+
+    public List<CourseIncomeDTO> getEachCourseIncome() {
+        List<CourseIncomeMapper> list = enrollmentService.getEachCourseIncome();
     }
 }

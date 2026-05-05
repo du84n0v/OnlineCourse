@@ -1,5 +1,6 @@
 package com.course.controller;
 
+import com.course.dto.CourseIncomeDTO;
 import com.course.dto.CourseStudentCountDTO;
 import com.course.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,11 @@ public class CourseController {
     public ResponseEntity<List<CourseStudentCountDTO>> top5Courses(){
         return ResponseEntity.ok(service.getTop5Courses());
     }
+
+    @GetMapping("/course-income")
+    public ResponseEntity<List<CourseIncomeDTO>> income(){
+        return ResponseEntity.ok(service.getEachCourseIncome());
+    }
+
 
 }

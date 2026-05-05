@@ -1,5 +1,6 @@
 package com.course.service;
 
+import com.course.mapper.CourseIncomeMapper;
 import com.course.mapper.CourseStudentCountMapper;
 import com.course.mapper.StudentCourseInstructorMapper;
 import com.course.mapper.StudentCoursesMapper;
@@ -29,5 +30,9 @@ public class EnrollmentService {
 
     public List<StudentCourseInstructorMapper> getStudentCourseDetailed(Integer studentId) {
         return repository.getStudentCourseDetailed(studentId);
+    }
+
+    public List<CourseIncomeMapper> getEachCourseIncome() {
+        return repository.getEachCourseIncome();
     }
 }

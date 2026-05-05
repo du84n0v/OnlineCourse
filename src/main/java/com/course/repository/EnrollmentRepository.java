@@ -1,6 +1,7 @@
 package com.course.repository;
 
 import com.course.entity.Enrollment;
+import com.course.mapper.CourseIncomeMapper;
 import com.course.mapper.CourseStudentCountMapper;
 import com.course.mapper.StudentCourseInstructorMapper;
 import com.course.mapper.StudentCoursesMapper;
@@ -38,4 +39,10 @@ public interface EnrollmentRepository extends CrudRepository<Enrollment, Integer
             "JOIN CourseInstructor ci ON ci.courseId = e.courseId " +
             "WHERE e.studentId =?1")
     List<StudentCourseInstructorMapper> getStudentCourseDetailed(Integer studentId);
+
+    @Query("SELECT e.course.title AS title," +
+            "e.course.price * COUNT(e) AS income " +
+            "FROM Enrollment e " +
+            "GROUP BY e.course.title, e.course.price")
+    List<CourseIncomeMapper> getEachCourseIncome();
 }

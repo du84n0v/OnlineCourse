@@ -1,8 +1,10 @@
 package com.course.service;
 
 import com.course.dto.CourseDTO;
+import com.course.dto.InstructorDTO;
 import com.course.entity.CourseInstructor;
 import com.course.mapper.InstructorCoursesMapper;
+import com.course.mapper.InstructorMapper;
 import com.course.repository.InstructorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +26,16 @@ public class InstructorService {
         List<CourseDTO> result = new LinkedList<>();
         for (InstructorCoursesMapper ls : list) {
             result.add(new CourseDTO(ls.getTitle(), ls.getPrice(), ls.getDuration()));
+        }
+        return result;
+    }
+
+    public List<InstructorDTO> getTopByExperience() {
+        List<InstructorMapper> list = repository.getTopByExperience();
+
+        List<InstructorDTO> result = new LinkedList<>();
+        for (InstructorMapper ls : list) {
+            result.add(new InstructorDTO(ls.fullName(), ls.experience()));
         }
         return result;
     }
