@@ -1,6 +1,8 @@
 package com.course.service;
 
 import com.course.dto.StudentCourseDTO;
+import com.course.dto.StudentCourseInstructorDTO;
+import com.course.mapper.StudentCourseInstructorMapper;
 import com.course.mapper.StudentCoursesMapper;
 import com.course.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,5 +28,15 @@ public class StudentService {
         }
 
         return response;
+    }
+
+    public List<StudentCourseInstructorDTO> getStudentCoursesDetail(Integer studentId) {
+        List<StudentCourseInstructorMapper> list = enrollmentService.getStudentCourseDetailed(studentId);
+
+        List<StudentCourseInstructorDTO> result = new LinkedList<>();
+        for (StudentCourseInstructorMapper ls : list) {
+            result.add(new StudentCourseInstructorDTO(ls.studentName(), ls.courseTitle(), ls.instructorName()));
+        }
+        return result;
     }
 }

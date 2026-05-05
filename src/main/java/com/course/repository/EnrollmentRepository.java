@@ -2,6 +2,7 @@ package com.course.repository;
 
 import com.course.entity.Enrollment;
 import com.course.mapper.CourseStudentCountMapper;
+import com.course.mapper.StudentCourseInstructorMapper;
 import com.course.mapper.StudentCoursesMapper;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -29,4 +30,12 @@ public interface EnrollmentRepository extends CrudRepository<Enrollment, Integer
             "ORDER BY COUNT(e) DESC " +
             "LIMIT 5")
     List<CourseStudentCountMapper> getTop5Courses();
+
+    @Query("SELECT e.student.fullName AS studentName," +
+            "e.course.title AS courseTitle," +
+            "ci.instructor.fullName AS insturtorName " +
+            "FROM Enrollment e " +
+            "JOIN CourseInstructor ci ON ci.courseId = e.courseId " +
+            "WHERE e.studentId =?1")
+    List<StudentCourseInstructorMapper> getStudentCourseDetailed(Integer studentId);
 }

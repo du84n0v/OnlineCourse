@@ -20,7 +20,7 @@ public class CourseInstructor {
     @JoinColumn(name = "course_id", insertable = false, updatable = false)
     private Course course;
 
-    @Column(name = "intructor_id")
+    @Column(name = "instructor_id")
     private Integer instructorId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "instructor_id", insertable = false, updatable = false)

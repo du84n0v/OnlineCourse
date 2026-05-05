@@ -1,6 +1,7 @@
 package com.course.service;
 
 import com.course.mapper.CourseStudentCountMapper;
+import com.course.mapper.StudentCourseInstructorMapper;
 import com.course.mapper.StudentCoursesMapper;
 import com.course.repository.EnrollmentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +25,9 @@ public class EnrollmentService {
 
     public List<CourseStudentCountMapper> getTop5Courses() {
         return repository.getTop5Courses();
+    }
+
+    public List<StudentCourseInstructorMapper> getStudentCourseDetailed(Integer studentId) {
+        return repository.getStudentCourseDetailed(studentId);
     }
 }
