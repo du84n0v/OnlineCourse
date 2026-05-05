@@ -27,4 +27,15 @@ public class CourseService {
 
         return result;
     }
+
+    public List<CourseStudentCountDTO> getTop5Courses() {
+        List<CourseStudentCountMapper> list = enrollmentService.getTop5Courses();
+        
+        List<CourseStudentCountDTO> result = new LinkedList<>();
+        for (CourseStudentCountMapper ls : list) {
+            result.add(new CourseStudentCountDTO(ls.getCourseTitle(), ls.getStudentCount()));
+        }
+
+        return result;
+    }
 }

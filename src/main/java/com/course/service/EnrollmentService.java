@@ -21,4 +21,8 @@ public class EnrollmentService {
     public List<CourseStudentCountMapper> getCourseStudentCount(Integer courseId) {
         return repository.getCourseStudentCount(courseId);
     }
+
+    public List<CourseStudentCountMapper> getTop5Courses() {
+        return repository.getTop5Courses();
+    }
 }

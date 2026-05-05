@@ -22,4 +22,11 @@ public interface EnrollmentRepository extends CrudRepository<Enrollment, Integer
             "WHERE e.courseId =?1 " +
             "GROUP BY e.course.title")
     List<CourseStudentCountMapper> getCourseStudentCount(Integer courseId);
+
+    @Query("SELECT e.course.title as courseTitle, " +
+            "COUNT(e) AS studentCount FROM Enrollment e " +
+            "GROUP BY e.course.title " +
+            "ORDER BY COUNT(e) DESC " +
+            "LIMIT 5")
+    List<CourseStudentCountMapper> getTop5Courses();
 }

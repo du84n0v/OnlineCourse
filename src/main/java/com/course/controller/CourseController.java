@@ -23,4 +23,9 @@ public class CourseController {
         return ResponseEntity.ok(service.getCourseStudentCount(id));
     }
 
+    @GetMapping("/top-5")
+    public ResponseEntity<List<CourseStudentCountDTO>> top5Courses(){
+        return ResponseEntity.ok(service.getTop5Courses());
+    }
+
 }
