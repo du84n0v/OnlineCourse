@@ -6,10 +6,7 @@ import com.course.dto.StudentDTO;
 import com.course.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,6 +16,11 @@ public class StudentController {
 
     @Autowired
     private StudentService service;
+
+    @PostMapping("/create")
+    public ResponseEntity<StudentDTO> create(@RequestBody StudentDTO dto){
+        return ResponseEntity.ok(service.save(dto));
+    }
 
     @GetMapping("/student-courses/{studentId}")
     public ResponseEntity<List<StudentCourseDTO>> studentCourse(@PathVariable Integer studentId){

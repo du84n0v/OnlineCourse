@@ -1,0 +1,148 @@
+###create enrollment
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "courseId": 1
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "courseId": 3
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 2,
+  "courseId": 1
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 2,
+  "courseId": 5
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 3,
+  "courseId": 2
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 3,
+  "courseId": 4
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 4,
+  "courseId": 1
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 5,
+  "courseId": 6
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 6,
+  "courseId": 2
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 6,
+  "courseId": 7
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 7,
+  "courseId": 3
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 8,
+  "courseId": 8
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 9,
+  "courseId": 9
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 4,
+  "courseId": 5
+}
+
+###create enrollment
+
+POST localhost:8080/enrollment/create
+Content-Type: application/json
+
+{
+  "studentId": 7,
+  "courseId": 4
+}

@@ -1,0 +1,108 @@
+###create student
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Alibek Yusupov",
+  "email": "alibek@gmail.com",
+  "phone": "+998901234567"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Jasur Karimov",
+  "email": "jasur@gmail.com",
+  "phone": "+998902345678"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Sardor Rahimov",
+  "email": "sardor@gmail.com",
+  "phone": "+998903456789"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Bobur Toshmatov",
+  "email": "bobur@gmail.com",
+  "phone": "+998904567890"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Sherzod Nazarov",
+  "email": "sherzod@gmail.com",
+  "phone": "+998905678901"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Dilnoza Hasanova",
+  "email": "dilnoza@gmail.com",
+  "phone": "+998906789012"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Malika Ergasheva",
+  "email": "malika@gmail.com",
+  "phone": "+998907890123"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Zulfiya Mirzayeva",
+  "email": "zulfiya@gmail.com",
+  "phone": "+998908901234"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Nodir Xolmatov",
+  "email": "nodir@gmail.com",
+  "phone": "+998909012345"
+}
+
+###create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "fullName": "Kamola Sultanova",
+  "email": "kamola@gmail.com",
+  "phone": "+998901112233"
+}

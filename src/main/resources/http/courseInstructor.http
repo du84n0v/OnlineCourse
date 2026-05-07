@@ -1,0 +1,98 @@
+###create courseInstructor
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 1,
+  "instructorId": 1
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 1,
+  "instructorId": 2
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 2,
+  "instructorId": 3
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 3,
+  "instructorId": 4
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 4,
+  "instructorId": 5
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 5,
+  "instructorId": 6
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 6,
+  "instructorId": 7
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 7,
+  "instructorId": 8
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 8,
+  "instructorId": 9
+}
+
+###create courseInstructor
+
+POST localhost:8080/course-instructor/create
+Content-Type: application/json
+
+{
+  "courseId": 9,
+  "instructorId": 10
+}

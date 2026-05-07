@@ -1,0 +1,108 @@
+###create course
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Java Backend",
+  "price": 1500000,
+  "duration": 6
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Python Bootcamp",
+  "price": 1200000,
+  "duration": 4
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Spring Framework",
+  "price": 1800000,
+  "duration": 5
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "SQL va PostgreSQL",
+  "price": 900000,
+  "duration": 3
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "React Frontend",
+  "price": 1300000,
+  "duration": 4
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Flutter Mobile",
+  "price": 1400000,
+  "duration": 5
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "DevOps va Docker",
+  "price": 1600000,
+  "duration": 4
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Machine Learning",
+  "price": 2000000,
+  "duration": 6
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Cyber Security",
+  "price": 1700000,
+  "duration": 5
+}
+
+###create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "title": "Data Science",
+  "price": 1900000,
+  "duration": 6
+}

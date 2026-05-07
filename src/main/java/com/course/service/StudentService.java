@@ -3,6 +3,7 @@ package com.course.service;
 import com.course.dto.StudentCourseDTO;
 import com.course.dto.StudentCourseInstructorDTO;
 import com.course.dto.StudentDTO;
+import com.course.entity.Student;
 import com.course.mapper.StudentCourseInstructorMapper;
 import com.course.mapper.StudentCoursesMapper;
 import com.course.mapper.StudentMapper;
@@ -20,6 +21,17 @@ public class StudentService {
     private StudentRepository repository;
     @Autowired
     private EnrollmentService enrollmentService;
+
+
+    public StudentDTO save(StudentDTO dto) {
+        Student student = new Student();
+        student.setFullName(dto.getFullName());
+        student.setEmail(dto.getEmail());
+        student.setPhone(dto.getPhone());
+
+        repository.save(student);
+        return dto;
+    }
 
     public List<StudentCourseDTO> getStudentCourses(Integer studentId) {
         List<StudentCoursesMapper> enrollments = enrollmentService.getStudentCourses(studentId);

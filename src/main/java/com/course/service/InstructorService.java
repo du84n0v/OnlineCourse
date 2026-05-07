@@ -3,6 +3,7 @@ package com.course.service;
 import com.course.dto.CourseDTO;
 import com.course.dto.InstructorDTO;
 import com.course.entity.CourseInstructor;
+import com.course.entity.Instructors;
 import com.course.mapper.InstructorCoursesMapper;
 import com.course.mapper.InstructorMapper;
 import com.course.repository.InstructorRepository;
@@ -38,5 +39,14 @@ public class InstructorService {
             result.add(new InstructorDTO(ls.fullName(), ls.experience()));
         }
         return result;
+    }
+
+    public InstructorDTO save(InstructorDTO dto) {
+        Instructors instructor = new Instructors();
+        instructor.setFullName(dto.getFullName());
+        instructor.setExperience(dto.getExperience());
+
+        repository.save(instructor);
+        return dto;
     }
 }
