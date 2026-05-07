@@ -2,7 +2,6 @@ package com.course.service;
 
 import com.course.dto.CourseDTO;
 import com.course.dto.InstructorDTO;
-import com.course.entity.CourseInstructor;
 import com.course.entity.Instructors;
 import com.course.mapper.InstructorCoursesMapper;
 import com.course.mapper.InstructorMapper;
@@ -36,7 +35,7 @@ public class InstructorService {
 
         List<InstructorDTO> result = new LinkedList<>();
         for (InstructorMapper ls : list) {
-            result.add(new InstructorDTO(ls.fullName(), ls.experience()));
+            result.add(new InstructorDTO(ls.getFullName(), ls.getExperience()));
         }
         return result;
     }

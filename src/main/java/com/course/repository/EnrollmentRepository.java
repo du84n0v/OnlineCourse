@@ -34,7 +34,7 @@ public interface EnrollmentRepository extends CrudRepository<Enrollment, Integer
 
     @Query("SELECT e.student.fullName AS studentName," +
             "e.course.title AS courseTitle," +
-            "ci.instructor.fullName AS insturtorName " +
+            "ci.instructor.fullName AS instructorName " +
             "FROM Enrollment e " +
             "JOIN CourseInstructor ci ON ci.courseId = e.courseId " +
             "WHERE e.studentId =?1")

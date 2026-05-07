@@ -49,7 +49,7 @@ public class StudentService {
 
         List<StudentCourseInstructorDTO> result = new LinkedList<>();
         for (StudentCourseInstructorMapper ls : list) {
-            result.add(new StudentCourseInstructorDTO(ls.studentName(), ls.courseTitle(), ls.instructorName()));
+            result.add(new StudentCourseInstructorDTO(ls.getStudentName(), ls.getCourseTitle(), ls.getInstructorName()));
         }
         return result;
     }
@@ -59,7 +59,7 @@ public class StudentService {
 
         List<StudentDTO> result = new LinkedList<>();
         for (StudentMapper ls : list) {
-            result.add(new StudentDTO(ls.fullName(), ls.email(), ls.phone()));
+            result.add(new StudentDTO(ls.getFullName(), ls.getEmail(), ls.getPhone()));
         }
         return result;
     }

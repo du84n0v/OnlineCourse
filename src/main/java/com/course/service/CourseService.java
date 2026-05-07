@@ -58,7 +58,7 @@ public class CourseService {
 
         List<CourseIncomeDTO> result = new LinkedList<>();
         for (CourseIncomeMapper ls : list) {
-            result.add(new CourseIncomeDTO(ls.title(), ls.income()));
+            result.add(new CourseIncomeDTO(ls.getTitle(), ls.getIncome()));
         }
         return result;
     }

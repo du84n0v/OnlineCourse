@@ -1,7 +1,7 @@
 package com.course.mapper;
 
 public interface StudentMapper {
-    String fullName();
-    String email();
-    String phone();
+    String getFullName();
+    String getEmail();
+    String getPhone();
 }
