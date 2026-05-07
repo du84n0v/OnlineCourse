@@ -15,7 +15,7 @@ public class CourseInstructorController {
     @Autowired
     private CourseInstructorService service;
 
-    @GetMapping("/save")
+    @GetMapping("/create")
     public ResponseEntity<CourseInstructorDTO> save(@RequestBody CourseInstructorDTO dto){
         return ResponseEntity.ok(service.save(dto));
     }

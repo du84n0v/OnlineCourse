@@ -16,7 +16,7 @@ public class EnrollmentController {
     @Autowired
     private EnrollmentService service;
 
-    @PostMapping("/save")
+    @PostMapping("/create")
     public ResponseEntity<EnrollmentDTO> save(@RequestBody EnrollmentDTO dto){
         return ResponseEntity.ok(service.save(dto));
     }
